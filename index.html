@@ -10,7 +10,9 @@
     <input type="button" value="fetch" onclick="
         fetch('css').then(function(response){       
             console.log(response);
-            console.dir(response)
+            console.dir(response);
+            console.log(response.text);
+            console.dir(response.text);
         })
         ">
 </body>
