@@ -20,7 +20,7 @@
 </body>
   <script>
     function fetchPage(name){
-    fetch('html').then(function(response){
+    fetch(name).then(function(response){
                 response.text().then(function(text){
                     document.querySelector('article').innerHTML = text;
                 })
