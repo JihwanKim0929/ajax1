@@ -39,7 +39,8 @@
                     console.log(items);
                     let tags = '';
                     for(let i = 0; i<items.length; i++){
-                      let tag = `<li><a href="#!${items[i]}" onclick="fetchPage('${items[i]}')">${items[i]}</a></li>`
+                      let item = items[i].trim();
+                      let tag = `<li><a href="#!${item}" onclick="fetchPage('${item]}')">${item}</a></li>`
                       tags = tags + tag;
                     }
                     document.querySelector('#nav').innerHTML = tags;
